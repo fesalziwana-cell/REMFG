@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>تطبيقات الذكاء الاصطناعي</title>
+</head>
+<body>
+   
+    <div class="navbar">
+        <div class="logo"><a href="index.html"> Noor Technologies Company </a></div>
+        <ul class="links">   
+            <li><a href="index.html">home</a></li> 
+            <li><a href="AboutUs.html">AboutUs </a></li>
+            <li><a href="apps.html" class="active">Apps</a></li>
+            <li><a href="add_app.html">Add_app</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>تطبيقات الذكاء الاصطناعي</h1>
+    </header>
+
+    <main>
+       
+        <div class="user-notice">
+            <p>🔍 <strong>ملاحظة هامة:</strong> عند النقر على زر "إظهار التفاصيل" سيتم عرض المعلومات الكاملة للتطبيق في المربع أسفل الجدول</p>
+        </div>
+
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>اسم التطبيق</th>
+                        <th>الشركة المطورة</th>
+                        <th>مجال الاستخدام</th>
+                        <th>مجاني</th>
+                        <th>إظهار التفاصيل</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Face App</td>
+                        <td>Wireless Lab</td>
+                        <td>Entertainment</td>
+                        <td>yes</td>
+                        <td><button class="show-details" onclick="showAppDetails('faceapp')">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td>Invideo AI</td>
+                        <td>Wireless Lab</td>
+                        <td>Robotics</td>
+                        <td>no</td>
+                        <td><button class="show-details" onclick="showAppDetails('invideo')">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Copilot</td>
+                        <td>Microsoft</td>
+                        <td>Education</td>
+                        <td>no</td>
+                        <td><button class="show-details" onclick="showAppDetails('copilot')">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td>Deepseek</td>
+                        <td>High Flyer</td>
+                        <td>Education</td>
+                        <td>yes</td>
+                        <td><button class="show-details" onclick="showAppDetails('deepseek')">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td>Starry AI</td>
+                        <td>Starry AI</td>
+                        <td>Entertainment</td>
+                        <td>yes</td>
+                        <td><button class="show-details" onclick="showAppDetails('starry')">إظهار التفاصيل</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+        <div id="appDetailsBox" class="details-box">
+            <div class="details-header">
+                <h3 id="appDetailTitle">تفاصيل التطبيق</h3>
+                <button class="close-btn" onclick="hideAppDetails()">✕ إغلاق</button>
+            </div>
+            <div id="appDetailContent">
+                <p class="default-message">يرجى النقر على زر "إظهار التفاصيل" لعرض معلومات التطبيق</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <p>جميع الحقوق محفوظة © 2025 - الجامعة الافتراضية السورية</p>
+    </footer>
+
+    <script src="myFunctions.js"></script>
+</body>
+</html>
